@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+Q2{
+    int x,y,arr1[x],arr2[x],arr3[x],arr4[x],sum1=0,sum2=0,sum3=0;
+    printf("Enter the size of arrays :");
+    scanf("%d",&x);
+    for(y=0;y<x;y++)
+     {
+        printf("Enter a value to the array 1 element %d :",y+1);
+        scanf("%d",&arr1[y]);
+        printf("Enter a value to the array 2 element %d :",y+1);
+        scanf("%d",&arr2[y]);
+        sum1+=arr1[y];
+        sum2+=arr2[y];
+        arr3[y]=arr1[y]+arr2[y];
+        arr4[y]=arr1[y]*arr2[y];
+        sum3+=arr4[y];
+   }
+    printf("Scalar sum of array 1 is %d\nScalar sum of array 2 is %d\n",sum1,sum2);
+    printf("Vector sum array is :");
+    for(y=0;y<x;y++)
+        printf("\t%d ",arr3[y]);
+    printf("\n");
+    printf("Vector Product is :");
+    for(y=0;y<x;y++)
+        printf("\t%d ",arr4[y]);
+    printf("\n");
+    printf("Scalar product is :%d\n",sum3);
+    return 0;
+}
+
+
+
+
